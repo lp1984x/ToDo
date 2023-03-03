@@ -1,0 +1,23 @@
+Form {
+  min-height: 80vh;
+  background: white;
+  .form-control {
+    color: #5a599a;
+    border-color: #8584bd;
+    &:focus {
+      border-color: #5a599a;
+      box-shadow: none;
+    }
+    &::placeholder {
+      color: #b8b7ff;
+    }
+  }
+
+  .btn-outline-primary {
+    color: #5a599a;
+    border-color: #5a599a;
+    &:hover {
+      background: #5a599a;
+    }
+  }
+}
