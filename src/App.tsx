@@ -1,9 +1,12 @@
 import TdForm from "./components/Form/TdForm";
 import { useState } from "react";
-
+import { Container } from "react-bootstrap";
 import { useAppDispatch } from "./hooks";
 import { addTodo } from "../src/store/todoSlice";
 import Header from "./components/Header/Header";
+import { Routes, Route } from "react-router-dom";
+import About from "./components/About/About";
+import "./app.scss";
 
 function App() {
   const [text, setText] = useState("");
@@ -18,7 +21,17 @@ function App() {
   return (
     <>
       <Header />
-      <TdForm text={text} updateText={setText} handleAction={addTask} />
+      <Container className="d-flex justify-content-center p-4">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <TdForm text={text} updateText={setText} handleAction={addTask} />
+            }
+          />
+          <Route path="about" element={<About />} />
+        </Routes>
+      </Container>
     </>
   );
 }
