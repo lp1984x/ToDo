@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <Header />
-      <Container className="d-flex justify-content-center p-4">
+      <Container className="d-flex justify-content-center">
         <Routes>
           <Route
             path="/"

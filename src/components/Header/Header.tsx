@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import * as icon from "react-bootstrap-icons";
+import "./header.scss";
 
 export default function Header() {
   return (
@@ -19,14 +20,14 @@ export default function Header() {
         <Navbar.Collapse className="justify-content-end">
           <Nav>
             <Nav.Item>
-              <Nav.Link href="https://github.com/lp1984x/learn_react">
-                <icon.Github color="white" size={20} />
-              </Nav.Link>
+              <Link to="https://github.com/lp1984x/learn_react" className="lkn">
+                <icon.Github size={20} />
+              </Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Link to="about" className="text-decoration-none">
-                <Nav.Link href="/home">About</Nav.Link>
+              <Link to="/about" className="text-decoration-none fs-5 ms-3 lkn">
+                About
               </Link>
             </Nav.Item>
           </Nav>

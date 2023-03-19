@@ -10,7 +10,7 @@ interface IProp {
 
 const TdForm: React.FC<IProp> = ({ updateText, handleAction, text }) => {
   return (
-    <Form className="col-6 p-3 ps-4 rounded-3 shadow wrap">
+    <Form className="col-12 col-md-6 p-3 ps-4 rounded-3 shadow wrap">
       <Row className="d-flex justify-content-center">
         <Col className="">
           <InputGroup className="mb-2">
