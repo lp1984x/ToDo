@@ -11,5 +11,10 @@
 }
 
 .form-check-input:checked + .form-check-label:before {
-  width: 90%;
+  width: 92%;
+}
+@media (max-width: 900px) {
+  .form-check-input:checked + .form-check-label:before {
+    width: 85%;
+  }
 }
